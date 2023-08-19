@@ -5,26 +5,7 @@ const schemeColoursSection = document.getElementById("scheme-colours");
 
 let colourArray = [];
 
-const renderColourSchemes = function () {
-  schemeColoursSection.innerHTML = "";
-
-  const hexValues = colourArray.map((colourIndex) => {
-    return colourIndex
-      .map((colour) => {
-        return `
-        <div id="colour-block" class="colour-block" style="background-color: ${colour.hex.value};">
-        <p class="hex-colour">${colour.hex.value}</p>
-        </div>
-
-      `;
-      })
-      .join("");
-  });
-
-  schemeColoursSection.innerHTML = hexValues;
-};
-
-generateColourBtn.addEventListener("click", () => {
+const fetchColourData = function () {
   fetch(
     `https://www.thecolorapi.com/scheme?hex=${colourInput.value.slice(
       1
@@ -36,4 +17,26 @@ generateColourBtn.addEventListener("click", () => {
       colourArray.push(colourData.colors);
       renderColourSchemes();
     });
-});
+};
+
+const renderColourSchemes = function () {
+  schemeColoursSection.innerHTML = "";
+
+  const hexValues = colourArray.map((colourIndex) => {
+    return colourIndex
+      .map((colour) => {
+        return `
+        <div class="colour-block" style="--block-background-color: ${colour.hex.value};">
+        <p class="hex-colour">${colour.hex.value}</p>
+        </div>
+      `;
+      })
+      .join("");
+  });
+
+  schemeColoursSection.innerHTML = hexValues;
+};
+
+generateColourBtn.addEventListener("click", fetchColourData);
+
+fetchColourData();
