@@ -11,3 +11,18 @@ body {
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f4f4f4;
+}
+
+button {
+  font-family: inherit;
+}
+
+.colour-generator {
+  width: 55rem;
+  background-color: #1f2937;
+  margin: 0 auto;
+}
