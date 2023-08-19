@@ -21,6 +21,10 @@ button {
   font-family: inherit;
 }
 
+p {
+  margin: 0;
+}
+
 .colour-generator {
   width: 55rem;
   background-color: #1f2937;
