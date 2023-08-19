@@ -2,4 +2,4 @@
 
 Colour generator using the colour API from www.thecolorapi.com
 
-View here: imaginative-marzipan-a8fe20.netlify.app
+View here: https://imaginative-marzipan-a8fe20.netlify.app/
