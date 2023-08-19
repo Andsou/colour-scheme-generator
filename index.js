@@ -27,8 +27,9 @@ const renderColourSchemes = function () {
       .map((colour) => {
         return `
         <div class="colour-block" style="--block-background-color: ${colour.hex.value};">
-        <p class="hex-colour">${colour.hex.value}</p>
+        
         </div>
+        <p class="hex-colour">${colour.hex.value}</p>
       `;
       })
       .join("");

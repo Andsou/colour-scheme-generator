@@ -25,10 +25,36 @@ p {
   margin: 0;
 }
 
+header {
+  height: 9rem;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 .colour-generator {
   width: 55rem;
+  height: 55rem;
   background-color: #1f2937;
-  margin: 0 auto;
+  margin: 10rem auto 0 auto;
+}
+
+.colour-input {
+  width: 5.1rem;
+  height: 3.4rem;
+  border: 0.5px solid #313131;
+  cursor: pointer;
+}
+
+.colour-dropdown {
+  width: 31.2rem;
+  background-color: #1f2937;
+  color: #d5d4d8;
+  font-size: 1.6rem;
+  border-radius: 6px;
+  padding: 0.9rem 1.3rem;
+  cursor: pointer;
 }
 
 .colour-block {
@@ -38,5 +64,29 @@ p {
 .scheme-colours {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  height: 500px;
+  grid-template-rows: 47rem 4.6rem;
+}
+
+.hex-colour {
+  background-color: #1f2937;
+  padding: 20px fill;
+  grid-row: 2 / -1;
+  color: #d5d4d8;
+  font-size: 1.2rem;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.colour-btn {
+  border-radius: 4px;
+  background-color: #3d4b60;
+  border: none;
+  padding: 13px 11px;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
