@@ -13,10 +13,21 @@
     <title>Colour Generator</title>
   </head>
   <body>
-    <header>
-      <h1>Colour Generator</h1>
-    </header>
-    <main></main>
+    <div class="colour-gen">
+      <header>
+        <input type="color" id="colorInput" name="colorInput" />
+        <select id="colorDropdown" name="colorDropdown">
+          <option value="monochrome">Monochrome</option>
+          <option value="monochrome-dark">Monochrome-dark</option>
+          <option value="monochrome-light">Monochrome-light</option>
+          <option value="Analogic">Analogic</option>
+          <option value="Complement">Complement</option>
+          <option value="analogic-complemment">Analogic-complement</option>
+          <option value="triad">Traid</option>
+        </select>
+      </header>
+      <main></main>
+    </div>
     <script src="./index.js" type="module"></script>
   </body>
 </html>
