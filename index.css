@@ -30,3 +30,13 @@ p {
   background-color: #1f2937;
   margin: 0 auto;
 }
+
+.colour-block {
+  background-color: var(--block-background-color);
+}
+
+.scheme-colours {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  height: 500px;
+}
