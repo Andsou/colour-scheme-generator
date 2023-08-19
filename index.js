@@ -12,10 +12,10 @@ const renderColourSchemes = function () {
     return colourIndex
       .map((colour) => {
         return `
-      <div id="colour-block" class="colour-block" style="background-color: ${colour.hex.value};>
+        <div id="colour-block" class="colour-block" style="background-color: ${colour.hex.value};">
+        <p class="hex-colour">${colour.hex.value}</p>
+        </div>
 
-      </div>
-      <p class="hex-colour">${colour.hex.value}</p>
       `;
       })
       .join("");
